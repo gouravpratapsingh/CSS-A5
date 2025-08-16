@@ -1,0 +1,108 @@
+body{
+  background-image: url(sky.jpg);
+}
+.header{
+  display: flex;
+  justify-content: center;
+  display: flex;
+  font-size: 40px;
+  font-weight: bolder;
+  color: black;
+}
+#h{
+  background-color: orange;
+  margin-right: 3px;
+}
+#i{
+  background-color: white;
+  margin-right: 5px;
+}
+#d{
+  background-color: green;
+}
+
+.sun{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#s{
+  position: relative;
+  left: 1200px;
+  animation:float;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+}
+
+@keyframes float{
+  0%{
+    right: 80px;
+  }
+  100%{
+    left: -100px;
+  }
+}
+
+.car{
+  margin-left: 450px;
+  margin-top: -300px;
+  margin-bottom: -10px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.road{
+  margin-top: -10px;
+  width:1500px;
+  overflow-x: hidden;
+}
+.r{
+  background-image: url(road.jpg);
+  height: 210px;
+  width: 500%;
+  position: relative;
+  background-repeat: repeat;
+  background-size: cover;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slide{
+  0%{
+    left: 0%;
+  }
+  100%{
+    left: -100%;
+  }
+}
+
+.wheel{
+  margin-left: 482px;
+  margin-top: -74px;
+  width: 275px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.w{
+  transform: rotate(0deg);
+  animation: round;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes round{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.flag{
+  margin-top: -141px;
+  margin-left: 725px;
+}

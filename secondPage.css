@@ -1,0 +1,34 @@
+body{
+  background-color: yellow;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  margin-left: 550px;
+}
+
+.box{
+  height: 120px;
+  width: 120px;
+  background-color: green;
+  margin-bottom: 20px;
+  transition-duration: 2s;
+}
+
+.flex:hover{
+  transition: linear;
+  width: 250px;
+  transition: 2s;
+}
+
+.flex1:hover{
+  transition: linear;
+  width: 300px;
+  height: 300px;
+  transition: width 2s, height 4s;
+}
+
+#h1{
+  margin-left: 615px;
+}

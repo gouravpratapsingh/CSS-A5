@@ -1,0 +1,152 @@
+body{
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.l1-1{
+  display: flex;
+}
+
+.box1{
+  background-color: darkcyan;
+  height: 120px;
+  width: 120px;
+  margin: 30px 30px 40px 40px;
+}
+
+.box2{
+  background-color:rgb(11, 66, 67);
+  height: 120px;
+  width: 120px;
+  margin: 30px 30px 40px 40px;
+}
+
+.box3{
+  background-color:aquamarine;
+  height: 120px;
+  width: 120px;
+  margin: 30px 30px 40px 40px;
+}
+
+.box4{
+  background-color:green;
+  height: 120px;
+  width: 120px;
+  margin: 30px 30px 40px 40px;
+}
+.box5{
+  background-color:brown;
+  height: 120px;
+  width: 120px;
+  margin: 30px 30px 40px 40px;
+}
+.box6{
+  background-color:blue;
+  height: 120px;
+  width: 120px;
+  margin: 30px 30px 40px 40px;
+}
+
+#a1{
+  transform: skewX(20deg);
+  animation: transform1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes transform1{
+  0%{
+    transform: skewX(20deg);
+  }
+  50%{
+    transform: skewX(-20deg);
+  }
+}
+
+.b1{
+  transform: skewY(-25deg);
+  animation: transform2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transform2{
+  0%{
+    transform: skewY(-25deg);
+  }
+  50%{
+    transform: skewY(25deg);
+  }
+}
+
+.c1{
+  transform: rotate();
+  animation: transform3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transform3{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.d1{
+  transform: scaley(1.0);
+  animation: transform4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transform4{
+  0%{
+    transform: scaley(1.0);
+  }
+  50%{
+    transform: scaley(0.5);
+  }
+  100%{
+    transform: scaley(1.0);
+  }
+}
+
+.d2{
+  transform:scaleX(1.0);
+  animation: transform5;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transform5{
+  0%{
+    transform: scaleX(1.0);
+  }
+  50%{
+    transform: scaleX(0.5);
+  }
+  100%{
+    transform: scaleX(1.0);
+  }
+}
+
+.d3{
+  transform: rotate(0);
+  animation: transform6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes transform6{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
